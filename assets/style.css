@@ -94,46 +94,24 @@ header nav ul li a:hover {
 
 /* Hero style end */
 
-/* About section style start */
-
-.about {
-    font-size: 30px;
-    border-bottom: 3px solid;
-    color: var(--tertiary-color);
-    padding-bottom: 20px;
-    text-align: left;
-    margin: 30px auto;
-    width: 50%;
-}
-
-.about h2 {
-    font-weight: lighter;
-}
-
-.step-image {
-    flex: 1 12%;
-    margin-right: 20px;
-    padding-left: 2px;
-}
-
-.step-image img {
-    max-width: 30%;
-}
-
-.about-text p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: var(--tertiary-color);
-}
+/* Pods Article style start */
 
 .pods {
+    display: flex;
     font-size: 30px;
-    border-bottom: 3px solid;
     color: var(--tertiary-color);
-    padding-bottom: 20px;
-    text-align: left;
-    margin: 30px auto;
-    width: 50%;
+    padding: 20px;
+    text-align: center;
+    margin: 3px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pods section {
+    border-bottom: 3px solid;
+    display: wrap;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .pods h2 {
@@ -143,6 +121,45 @@ header nav ul li a:hover {
 .pods a {
     font-size: smaller;
     color: var(--tertiary-color);
+}
+
+.pods .about {
+    border:1px solid rgb(24, 33, 26);
+    background-color: var(--primary-color);
+    align-content: flex-start;
+    max-width: 25%;
+    min-width: 25%;
+}
+
+.pods .about p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.pods .about div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px var(--secondary-color);
+}
+
+.step-image {
+    /* margin-right: 20px; */
+    padding-left: 2px;
+    align-items: flex-end;
+}
+
+.step-image img {
+    max-width: 30%;
+}
+
+.secondary-pod {
+    height: fit-content;
+}
+
+.secondary-pod  h2 {
+    padding: 30px;
 }
 
 
