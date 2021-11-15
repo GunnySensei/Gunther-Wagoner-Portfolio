@@ -104,7 +104,7 @@ header nav ul li a:hover {
     text-align: center;
     margin: 3px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .pods section {
@@ -127,13 +127,14 @@ header nav ul li a:hover {
     border:1px solid rgb(24, 33, 26);
     background-color: var(--primary-color);
     align-content: flex-start;
-    max-width: 25%;
+    max-width: 75%;
     min-width: 25%;
 }
 
 .pods .about p {
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
+    padding: 5px;
 }
 
 .pods .about div {
@@ -147,11 +148,11 @@ header nav ul li a:hover {
 .step-image {
     /* margin-right: 20px; */
     padding-left: 2px;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .step-image img {
-    max-width: 30%;
+    max-width: 40%;
 }
 
 .secondary-pod {
@@ -162,6 +163,14 @@ header nav ul li a:hover {
     padding: 30px;
 }
 
+/* Pods article style end */
 
+/* Footer styling begin */
 
-/* About section style end */
+#footer {
+    background-color: var(--tertiary-color);
+    color:var(--primary-color);
+    
+}
+
+/* Footer styling end */
