@@ -1,0 +1,207 @@
+:root {
+    --primary-color: rgb(233, 233, 231);
+    --secondary-color: rgb(85, 20, 18);
+    --tertiary-color: rgb(24, 33, 26);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.primary-border {
+    border-color: var(--secondary-color);
+}
+
+body {
+    color: var(--tertiary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header/Nav bar styles start*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: var(--primary-color);
+    background-image: url(./pictures/halla_peak.jpg);
+    background-position: 50% 80%;
+    background-size: auto;
+    background-attachment: fixed;
+    padding: 20px 35px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+}
+
+header h1 a {
+    color: var(--secondary-color);
+    font-weight: lighter;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    color: var(--secondary-color);
+}
+
+header nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+
+/*Hero style start*/
+
+.hero {
+    display: flex;
+    background-image: url(./pictures/halla_peak.jpg);
+    background-size: auto;
+    background-position: 50% 80%;
+    background-attachment: fixed;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.hero-text {
+    margin: 3%;
+    color: var(--secondary-color);
+    text-shadow: 0 0 4px rgba(255, 255, 255, .5);
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+/* Hero style end */
+
+/* Pods Article style start */
+
+.pods {
+    display: flex;
+    font-size: 30px;
+    color: var(--tertiary-color);
+    padding: 20px;
+    text-align: center;
+    margin: 3px;
+    width: 50%;
+}
+
+.pods section {
+    border-bottom: 3px solid;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pods h2 {
+    font-weight: lighter;
+}
+
+.pods a {
+    font-size: 17px;
+    color: var(--tertiary-color);
+}
+
+.pods .about {
+    border:1px solid rgb(24, 33, 26);
+    background-color: var(--primary-color);
+}
+
+.pods .about p {
+    font-size: 18px;
+    text-align: justify;
+    padding: 5px;
+}
+
+.pods .about div {
+    display: inline-block;
+    border: 1px var(--secondary-color);
+    width: 48%;
+}
+
+.About-pic {
+    /* margin-right: 20px; */
+    padding-left: 2px;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.About-pic img {
+    width: 100%;
+}
+
+.small-pods {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.small-pods section {
+    flex-direction: row;
+}
+
+.small-pods section div {
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+.small-pods section div img {
+    width: 100%;
+}
+
+/* Pods article style end */
+
+/* Footer styling begin */
+
+#footer {
+    background-color: var(--tertiary-color);
+    color:var(--primary-color);
+    
+}
+
+#footer div {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#footer div p {
+    font-weight: lighter;
+    color: var(--primary-color);
+}
+
+/* Footer styling end */
+
+/* Media Queries Start */
+
+@media screen and  (max-width: 768px) {
+    .secondary-pod {
+        position: absolute;
+        flex: 0 100%;
+    }
+}
+
+/* Media Queries End */
