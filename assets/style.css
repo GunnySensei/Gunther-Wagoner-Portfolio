@@ -115,11 +115,6 @@ header nav ul li a:hover {
     font-weight: lighter;
 }
 
-.pods a {
-    font-size: 17px;
-    color: var(--tertiary-color);
-}
-
 .pods .about {
     border:1px solid rgb(24, 33, 26);
     background-color: var(--primary-color);
@@ -129,6 +124,10 @@ header nav ul li a:hover {
     font-size: 25px;
     text-align: justify;
     padding: 5px;
+}
+
+.about-text {
+    align-items: flex-start;
 }
 
 .pods .about div {
@@ -147,7 +146,7 @@ header nav ul li a:hover {
 }
 
 .About-pic img {
-    width: 48%;
+    width: 50%;
 }
 
 .small-pods {
@@ -155,24 +154,29 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .small-pods section {
     flex-direction: row;
-    width: 30%;
+    width: 25%;
     height: auto;
+}
+
+.small-pods .contact {
+    width: 40%;
 }
 
 .small-pods section div {
     display: inline-block;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .small-pods section div img {
     width: 100%;
 }
 
-.small-pods section a {
+.small-pods section div a {
     font-size: 20px;
     color: var(--tertiary-color);
 }
@@ -207,10 +211,24 @@ header nav ul li a:hover {
 
 /* Media Queries Start */
 
-@media screen and (max-width: 768px) {
-    .small-pods section{
-        color: red;
-        flex-direction: column;
+@media screen and (max-width: 980px) {
+    
+    
+    .small-pods section {
+        padding: 30px 15px; 
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;  
+        width: auto;
+    }
+
+    .small-pods .contact {
+        width: auto;
+    }
+
+    .small-pods div {
+        flex: 1 100%;
+        text-align: center;
     }
 }
 
