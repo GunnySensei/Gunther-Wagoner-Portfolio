@@ -103,7 +103,6 @@ header nav ul li a:hover {
     padding: 20px;
     text-align: center;
     margin: 3px;
-    width: 50%;
 }
 
 .pods section {
@@ -160,6 +159,8 @@ header nav ul li a:hover {
 
 .small-pods section {
     flex-direction: row;
+    width: 33.33%;
+    height: auto;
 }
 
 .small-pods section div {
@@ -197,10 +198,10 @@ header nav ul li a:hover {
 
 /* Media Queries Start */
 
-@media screen and  (max-width: 768px) {
-    .secondary-pod {
-        position: absolute;
-        flex: 0 100%;
+@media screen and (max-width: 768px) {
+    .small-pods section{
+        color: red;
+        flex-direction: column;
     }
 }
 
