@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Gunther Wagoner</title>
   </head>
   <body>
     <!-- header bar, navigation-->
-    <header>
-      <h1>
+    <header class="container-fluid d-flex">
+      <h1 class="col">
         <a href="./index.html" style="text-decoration: none">Gunner W.</a>
       </h1>
-      <nav>
-        <ul>
-          <li>
+      <nav class="col">
+        <ul class="container row flex-row">
+          <li class="col">
             <a href="#about" style="text-decoration: none">About</a>
           </li>
-          <li>
+          <li class="col">
             <a href="#projects" style="text-decoration: none">Projects</a>
           </li>
-          <li>
+          <li class="col">
             <a href="#resume" style="text-decoration: none">Resume</a>
           </li>
-          <li>
+          <li class="col">
             <a href="#run-buddy" style="text-decoration: none">Example</a>
           </li>
         </ul>
@@ -41,13 +42,13 @@
     <!-- hero end-->
 
     <article class="pods">
-      <section id="about" class="about primary-border">
-        <div class="About-pic">
+      <section id="about" class="about primary-border container-fluid row">
+        <div class="About-pic col">
           <h2 class="section-title">About</h2>
           <img src="assets/pictures/cover 1.JPG" alt="hipster looking man in a denim coat in fall"/>
         </div>
         
-        <div class="about-text">
+        <div class="about-text col">
           <p>
             Hello, everyone. My name is Gunner and I'm a Full Stack developer
             currently enrolled in the University of Texas Full Stack Bootcamp and
@@ -63,11 +64,12 @@
       </section>
     </article>
 
-    <article class="small-pods">
-      <section id="resume" class="resume secondary-pod">
+    <article class="small-pods container align-items-center">
+      <section id="resume" class="resume secondary-pod col-6">
         <div>
           <h2>Resume</h2>
-          <img src="./assets/pictures/resume-stock.jpg">
+          <!-- <img src="./assets/pictures/resume-stock.jpg"> -->
+          <br>
           <a
           href="./assets/documents/Resume 2021.pdf"
           target="blank"
@@ -77,30 +79,33 @@
         </div>
       </section>
 
-      <section id="run-buddy" class="run-buddy secondary-pod">
+      <section id="run-buddy" class="run-buddy secondary-pod col-6">
         <div>  
           <h2>Example</h2>
           <img src="assets/pictures/run-buddy.jpg">
+          <br>
           <a href="https://gunnysensei.github.io/run-buddy/" target="blank" style="text-decoration: none">
             See here for my example project.</a
           >
         </div>
       </section>
 
-      <section id="Brewhaus" class="run-buddy secondary-pod">
+      <section id="Brewhaus" class="run-buddy secondary-pod col-6">
         <div>  
           <h2>Example</h2>
           <img src="assets/pictures/brewhaus-preview.jpg" alt="preview of the Brewhaus website">
+        </br>
           <a href="https://jaredtrp.github.io/project_cheese/" target="blank" style="text-decoration: none">
             A team project that pulls from multiple APIs to deliver information about beer to the user.</a
           >
         </div>
       </section>
 
-      <section id="projects" class="projects secondary-pod">
+      <section id="projects" class="projects secondary-pod col-6">
         <div>
           <h2>Projects</h2>
-          <img src="assets/pictures/projects-stock.jpg">
+          <!-- <img src="assets/pictures/projects-stock.jpg"> -->
+          <br>
           <a href="https://guntherwagoner.wordpress.com/2021/07/26/project-portfolio/" target="blank" style="text-decoration: none">
             Please see here for my work.</a>
         </div>
