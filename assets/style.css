@@ -142,26 +142,13 @@ header nav ul li a:hover {
 }
 
 .small-pods {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    margin-left: 10px;
 }
 
-.small-pods section {
-    flex-direction: row;
-    width: 50%;
-    height: 25%;
-}
-
-.small-pods .run-buddy {
-    width: 40%;
-}
 
 .small-pods section div {
-    display: inline-block;
     justify-content: space-around;
 }
 
