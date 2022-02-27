@@ -1,232 +1,335 @@
-:root {
-    --primary-color: rgb(233, 233, 231);
-    --secondary-color: rgb(85, 20, 18);
-    --tertiary-color: rgb(24, 33, 26);
-}
+/* || Default Element Styling */
 
 * {
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.primary-border {
-    border-color: var(--secondary-color);
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  background-image: url(./pictures/halla_peak.jpg);
+  background-position: 50% 17%;
 }
 
-body {
-    color: var(--tertiary-color);
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
+main {
+  flex: 1;
+  padding: 2% 4%;
 }
 
-/* Header/Nav bar styles start*/
-
-header {
-    padding: 50px;
-    background-color: var(--primary-color);
-    background-image: url(./pictures/halla_peak.jpg);
-    background-position: 50% 80%;
-    background-size: auto;
-    background-attachment: fixed;
-    padding: 20px 35px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.1s;
 }
 
-header h1 a {
-    color: var(--secondary-color);
+a:hover {
+  color: #ffffff;
 }
 
-header nav {
-    margin: 7px 0;
+img {
+  max-width: 100%;
 }
 
-header nav ul {
-    list-style: none;
+nav {
+  align-items: center;
 }
 
-header nav ul li a {
-    padding: 10px 15px;
-    font-size: 1.55vw;
-    color: var(--secondary-color);
+button {
+  background-color: #fc2626;
+  border: 0;
+  padding: 0.5rem 0.8rem;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-header nav ul li a:hover {
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-    border-radius: 10px;
-    text-shadow: none;
+button:hover {
+  background-color: #df2929;
 }
 
-
-/*Hero style start*/
-
-.hero {
-    display: flex;
-    background-image: url(./pictures/halla_peak.jpg);
-    background-size: auto;
-    background-position: 50% 80%;
-    background-attachment: fixed;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-end;
+textarea,
+input {
+  padding: 0.5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.hero-text {
-    margin: 3%;
-    color: var(--secondary-color);
-    text-shadow: 0 0 4px rgba(255, 255, 255, .5);
-    font-size: 25px;
-    line-height: 1.3;
+textarea:focus,
+input:focus {
+  outline: none;
+  border: 1px solid #3486eb;
 }
 
-/* Hero style end */
+.header {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  background-color: rgb(196, 205, 220);
+}
 
-/* Pods Article style start */
+header h1 {
+  font-size: 1em;
+}
 
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+  /* Height of the footer */
+  background: rgb(196, 205, 220);
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+/* || Class Stylizing */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1vw;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #225ca3;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color 0.1s;
+  margin-left: 16px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: #3486eb;
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7d7d7d;
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
+
+.upvote-btn {
+  background-color: #197d0f;
+  transition: background-color 0.1s;
+}
+
+.upvote-btn:hover {
+  background-color: #1f9c13;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+  background-color: #fff5eb;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: 0.5%;
+  opacity: 0.6;
+}
+
+.new-post-form input {
+  width: 300px;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+.logo {
+  max-width: 18%;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* || Homepage Specific */
+
+.homepage-section {
+  display: flex;
+  align-items: center;
+}
+
+.homepage-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.homepage-hero {
+  width: cover;
+  height: 50vh;
+  color: white;
+  background-image: url(./pictures/halla_peak.jpg);
+  background-position: 50% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pods-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  color: white;
+  background-color: #7d7d7d;
+  gap: 3rem;
+}
 .pods {
-    display: flex;
-    font-size: 30px;
-    color: var(--tertiary-color);
-    padding: 20px;
-    text-align: center;
-    margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-position: center;
+  height: 350px;
+  width: 45%;
+  margin-left: 2rem;
+  gap: 4rem;
+  color: white;
+  background-color: #7d7d7d;
 }
 
-.pods section {
-    border-bottom: 3px solid;
-    flex-wrap: wrap;
-    align-items: center;
+.pods a {
+  width: 35%;
 }
 
-.pods h2 {
-    font-weight: lighter;
-}
-
-.pods .about {
-    border:1px solid rgb(24, 33, 26);
-    background-color: var(--primary-color);
-}
-
-.pods .about p {
-    font-size: 15px;
-    font-weight: lighter;
-    text-align: center;
-    padding: 5px;
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  height: 350px;
+  color: white;
 }
 
 .about-text {
-    align-items: flex-start;
+  color: white;
+  text-align: center;
 }
 
-.pods .about div {
-    display: inline-block;
-    border: 1px var(--secondary-color);
-    padding-bottom: 10px;
+.resume {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./pictures/resume-stock.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.About-pic {
-    /* margin-right: 20px; */
-    padding-left: 2px;
-    align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    size: 50%;
+.run-buddy {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./pictures/run-buddy.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.About-pic img {
-    width: 50%;
+.brewhaus {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./pictures/brewhaus-preview.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.small-pods {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+.just-tech-news {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./pictures/Just-Tech-News.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.small-pods section {
-    flex-direction: row;
-    width: 50%;
-    height: 25%;
+.SeeVee {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./pictures/seevee.gif);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.small-pods .run-buddy {
-    width: 40%;
+.toggle-blog {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./pictures/toggle-tech.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 2rem;
 }
-
-.small-pods section div {
-    display: inline-block;
-    justify-content: space-around;
-}
-
-.small-pods section div img {
-    width: 50%;
-}
-
-.small-pods section div a {
-    font-size: 20px;
-    color: var(--tertiary-color);
-}
-
-/* Pods article style end */
-
-/* Footer styling begin */
-
-#footer {
-    background-color: var(--tertiary-color);
-    color:var(--primary-color);
-    
-}
-
-#footer div {
-    color: var(--primary-color);
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-#footer div p {
-    font-weight: lighter;
-    color: var(--primary-color);
-}
-
-#footer div p a {
-    color: var(--primary-color);
-}
-
-/* Footer styling end */
-
-/* Media Queries Start */
-
-@media screen and (max-width: 980px) {
-    
-    
-    .small-pods section {
-        padding: 30px 15px; 
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;  
-        width: auto;
-    }
-
-    .small-pods .run-buddy {
-        width: auto;
-    }
-
-    .small-pods div {
-        flex: 1 100%;
-        text-align: center;
-    }
-
-    .pods .about div  {
-        width: 100%;
-    }
-}
-
-/* Media Queries End */
